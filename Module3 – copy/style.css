@@ -1,0 +1,108 @@
+body {
+    font-family: 'Playfair Display', 'Ubuntu', serif;
+    background-color: #fff;
+    color: #626262;
+}
+
+#wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+/* NAVIGATION  */
+.navbar {
+    margin: 30px auto 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+.navbar li {
+    display: inline;
+    
+}
+.navbar a {   
+    display: inline-block;
+    width: 40px;
+    margin-right: 140px;
+    padding:  5px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    opacity: 0.5;
+}
+.navbar a:visited {
+    color: #000;
+}
+/* END NAVIGATION */
+
+/* CONTENT */
+.container {
+    display: inline;
+    margin: 40px 0;
+      
+}
+.row {
+    display: inline;
+}
+/* CARDS */
+.card {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.card img {
+    width: 100%;
+    border: none;
+}
+
+.text {
+    margin-top: 10px;
+    text-align: left;
+}
+.text h2 {
+    font-size: 30px;
+}
+.first-letter {
+    text-transform: capitalize;
+}
+
+.text > p {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.category {
+    font-family: 'Ubuntu', serif;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+/* CARDS */
+
+.container:last-child {
+    margin: 0;
+}
+/* BUTTON */
+button {
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 16px 32px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #626262;
+    text-decoration: none;
+    background-color: #fff;
+    color: #626262;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+/* BUTTON */

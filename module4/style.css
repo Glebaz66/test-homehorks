@@ -1,0 +1,128 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin-top: 38px;
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 300;
+    color: #555252;
+    text-transform: capitalize;
+    float: left;
+}
+
+.logo::first-letter {
+    color: #19bb9b;
+
+}
+
+.menu {
+    width: 50%;
+    vertical-align: middle;
+    float: right;
+}
+
+.menu ul {
+    
+}
+
+.menu li {
+    border: none;
+    margin: 0;
+}
+
+.menu ul li a {
+    padding: 0 32px 0 0;
+    color: #0f0101;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.menu ul li a:hover {
+    color: #19bb9b;
+   
+}
+
+.menu ul li a:last-child {
+    padding-right: 0;
+    clear: both;
+}
+
+.caption {
+    height: 74px;
+    text-align: center;
+    margin: 100px 0 70px 0;
+    
+}
+
+.caption h2 {
+    color: #515151;
+    font-size: 48px;
+    
+}
+.divider {
+    width: 163px;
+    height: 10px;
+    background-color: #19bb9b;
+    margin-left: 468px;
+}
+/* .caption h2::after {
+    content: "div";
+} */
+
+.galary {
+    width: 100%;
+    height: auto;
+}
+.galary img {
+    width: 255px;
+    height: 322px;
+
+}
+.card {
+    width: 255px;
+    float: left;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+}
+.good {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 42px;
+    background: #e9f0fd;
+}
+.good-name {
+    width: 70%;
+    float: left;
+    background-color: #323232;
+}
+
+.good-prise {
+    width: 30%;
+    float: right;
+    background-color: #8c8c8c;
+}
+
+
+.good:hover:nth-child(2) .good-name{
+    background-color: #000000;
+
+}
+
