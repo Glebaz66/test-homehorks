@@ -19,9 +19,12 @@ header {
 .logo {
     font-size: 30px;
     font-weight: 300;
-    color: #555252;
     text-transform: capitalize;
     float: left;
+}
+.logo a {
+    text-decoration: none;
+    color: #555252;
 }
 
 .logo::first-letter {
@@ -33,10 +36,6 @@ header {
     width: 50%;
     vertical-align: middle;
     float: right;
-}
-
-.menu ul {
-    
 }
 
 .menu li {
@@ -64,9 +63,10 @@ header {
 }
 
 .caption {
-    height: 74px;
+    height: 106px;
     text-align: center;
-    margin: 100px 0 70px 0;
+    padding: 0;
+    
     
 }
 
@@ -76,23 +76,27 @@ header {
     
 }
 .divider {
+    display: inline-block;
     width: 163px;
-    height: 10px;
+    height: 7px;
     background-color: #19bb9b;
-    margin-left: 468px;
 }
+
 /* .caption h2::after {
-    content: "div";
+    content: "123";
+    border-bottom: #19bb9b;
+    display: block;
+    width: 200px;
 } */
 
 .galary {
     width: 100%;
     height: auto;
+    margin-top: 92px;
 }
-.galary img {
+.good img {
+    overflow: hidden;
     width: 255px;
-    height: 322px;
-
 }
 .card {
     width: 255px;
@@ -121,8 +125,24 @@ header {
 }
 
 
-.good:hover:nth-child(2) .good-name{
-    background-color: #000000;
-
+.card:hover :nth-child(n+2){
+    color: #fff;
+    background-color: #1abc9c;
+}
+.card:hover :nth-child(n+3){
+    color: #fff;
+    background-color: #7fd9c7;
 }
 
+/* .galary :last-child {
+    clear: right;
+    display: table;
+} */
+
+
+
+.clearfix::after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
