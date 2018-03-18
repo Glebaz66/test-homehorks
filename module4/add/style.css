@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav {
+    display: inline-block;
+    margin-top: 20px;   
+}
+
+
+.nav li {
+    list-style: none;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    background: rgb(255, 170, 160);
+    height: 50px;
+}
+
+.nav a {
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav a:hover {
+    color: rgb(204, 76, 76);
+}
+
+.stuf {
+    margin-top: 50px;
+    width: 100px;
+}
+.stuf li {
+    list-style: none;
+    border: 1px solid #000;
+    color: #0E1116;
+}
+
+.stuf li:nth-child(3n){
+    background: #88292F;
+}
+.stuf li:nth-child(3n+1){
+    background: #5DB7DE;
+}
+.stuf li:nth-child(3n+2){
+    background: #0D5D56;
+}
+.stuf::before {
+    content: "task 2+3";
+    text-transform: uppercase;
+}
+.stuf li::before {
+    content: "\2192";
+}
