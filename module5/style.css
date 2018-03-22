@@ -103,14 +103,12 @@ header {
     background: rgba(85, 162, 144, 0.6);
 }
 .box h2::after:hover{
-    opacity: 0.6;
+    color: red;
 }
 /* slider style end */
 
 .new-collection {
-    height: 677px;
-    background: #e9f0fd;
-    padding-top: 100px;
+    padding: 50px 0;
 }
 .new-collection h2{
     color: #515151;
@@ -126,4 +124,82 @@ header {
     display: block;
     border-bottom: 7px solid #1abc9c;
     text-align: center;
+}
+/* galary style */
+.galary-wrap {
+    width: 100%;
+    height: 570px;
+    background: #e9f0fd;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+}
+.galary {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.good img {
+    width: 252px;
+}
+.card {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    
+}
+.good {
+    vertical-align: middle;
+    line-height: 42px;
+    background: #e9f0fd;
+    position: relative;
+}
+.good-name {
+    width: 70%;
+    float: left;
+    background-color: #323232;
+}
+.good-prise {
+    width: 30%;
+    float: right;
+    background-color: #8c8c8c;
+}
+.card:hover :nth-child(n+2){
+    color: #fff;
+    background-color: #1abc9c;
+}
+.card:hover :nth-child(n+3){
+    color: #fff;
+    background-color: #7fd9c7;
+}
+
+
+/* hover style  */
+.cover2 {
+    display: block;
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    
+}
+/* hover style  */
+/* galary style */
+footer {
+    width: 100%;
+    height: 90px;
+    background: #323232;
+    text-align: center;
+}
+footer p {
+    color: #fefefe;
+    font-size: 16px;
+    line-height: 90px;
+}
+footer p span {
+    color: #46bfa9;
 }
