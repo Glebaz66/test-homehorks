@@ -61,7 +61,7 @@ header {
 }
 .slider h2 {
     color: #fff;
-    font-size: 60px;  
+    font-size: 40px;  
     font-weight: 700;
 }
 .slider p {
@@ -71,12 +71,16 @@ header {
 
 }
 .box {
-    /* position: absolute;
+    position: absolute;
     width: 770px;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);   */
-    display: flex;
+    transform: translateX(-50%) translateY(-50%);  
+    /* overflow: hidden; */
+}
+.slider span {
+    font-size: 24px;
+    font-weight: 300;
 }
 .box button {
     width: 104px; 
@@ -85,10 +89,18 @@ header {
     border: none;
     background-color: rgba(140, 217, 196, 0.5);
     color: #fff;
-    font-size: 49px;
-    margin: 0;
-    padding: 0;
-    
+    font-size: 70px;  
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.box button:hover {
+    background-color: #1abc9c;
+    transition: all 0.5s;
+
 }
 
 /* slider style end */
@@ -124,7 +136,7 @@ header {
 .galary {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-around;
 }
 .galary-card {
@@ -156,7 +168,6 @@ header {
 
 /* card hover fx */
 .galary-card-cover {
-    display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.55);
     width: 90%;
@@ -165,6 +176,7 @@ header {
     left: 13px;
     text-align: center;
     vertical-align: middle;
+    opacity: 0;
 
 }
 .icon {
@@ -172,28 +184,54 @@ header {
     width: 50px;
     height: 50px;
     color: #fff;
-    border: 1px solid #fff;
-
-
-
+    border: 2px solid #fff;
 }
 .like {
+    background-image: url("img/icon-heart.png");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
+}
+.galary-card-cover .icon:hover {
+    background-color: #1abc9c;
+    transition: all 0.5s;
     
 }
 .share {
-
+    background-image: url("img/icon-arrows.png");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
 }
 .time {
-
+    background-image: url("img/icon-clock.png");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
 }
-.addToChart {
 
+.addToChart {
+    background-image: url("img/icon-cart.png");
+    background-color: #323232;
+    background-repeat: no-repeat;
+    background-position: 4%;
+    position: absolute;
+    top: 165px;  
+    left: 15px;    
+    width: 214px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 300;
 }
 .galary-card:hover .galary-card-cover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
+    transition: all 0.5s;
 
 }
 .galary-card:hover h2{
@@ -234,4 +272,7 @@ footer p {
 }
 footer p span {
     color: #46bfa9;
+}
+footer a {
+    text-decoration: none;
 }
