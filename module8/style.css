@@ -1,0 +1,202 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.wrap {
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+.wrap-header {
+    background-image: url('img/URLAUBSGLCK_Mobile.png');
+    background-repeat: no-repeat;
+    height: 540px;
+    text-align: center;
+}
+.header-buttns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.header-button {
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+ul li a:hover {
+    border: 3px solid #fff;
+    transition: all 2s;
+}
+.header-text {
+    margin-top: 6rem;
+}
+
+.header-text h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.header-text h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.header-text p {
+    width: 68%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.header-button-find {
+    margin-top: 25px;
+    padding: 10px;
+    width: 270px;
+    background-color: #ff4e50;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.header-button-find:hover {
+    box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.35);
+    transition: all 0.5s;
+}
+
+main {
+    background-color: #fff;
+    padding: 50px 0 35px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+main p {
+    color: #333;
+    font-size: 22px;
+    width: 260px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.card {
+    width: 100%;
+    height: 225px;
+    margin-top: 30px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 25%;
+}
+.card img:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+}
+.card h3 {
+    padding: 20px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.card p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    width: 220px;
+} 
+main .more {
+    width: 260px;
+    height: 35px;
+    color: #ff4e50;
+    background-color: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+main .more:hover {
+    color: #fff;
+    background-color: #ff4e50;
+    transition: all 0.5s;
+}
+@media screen and (min-width: 768px) {
+    .wrap {
+        max-width: 768px;
+    }
+    .wrap-header {
+        width: 768px;
+        height: 700px;
+        background-image: url('img/bg_Tablet.png');
+    }
+    .header-buttns {
+        margin-left: 527px;
+        position: relative;
+    }
+    .header-text {
+        margin-top: 11rem;
+    }
+    .header-text h1 {
+        position: absolute;
+        top: 33px;
+        left: 20%;
+        font-weight: 400;
+    }
+    .header-text h2 {
+        width: 480px;
+        font-size: 43px;
+        margin: 0 auto;
+    }
+    main p {
+        width: 100%;
+    }
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .card {
+        width: 300px;
+    }
+    main .more {
+        margin-top: 35px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .wrap {
+        min-width: 1100px;
+    }
+    .wrap-header {
+        width: 100%;
+        background-image: url('img/bg_Desktop.png');
+    }
+    .cards {
+        flex-flow: row nowrap;
+    }
+    .header-text h1 {
+        left: 10%;
+}
