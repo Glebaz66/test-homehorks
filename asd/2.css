@@ -6,16 +6,14 @@
 }
 /* -----WRAPPER----- */
 .wrapper {
-    max-width: 80%;
+    max-width: 1200px;
     padding-top: 30px;
     margin: 0 auto;
-    overflow: hidden;
 }
 /* -----NAVIGATION----- */
-.logo{
+.name {
     font-size: 30px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     color: #95e1d3;
     text-decoration: none;
 }
@@ -24,7 +22,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
-    font-family: 'Montserrat', sans-serif;
 
 }
 .nav_bar ul {
@@ -43,8 +40,6 @@
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-
-    
 }
 .nav_bar a:hover {
     color: #f38181;
@@ -72,12 +67,16 @@
  
 }
 .a_header {
+    position: relative;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
     padding-left: 50px;
 }
-
+.a_header::before {
+    position: absolute;
+    
+}
 /* ----ARTICLES---- */
 .articles {
     width: 100%;
@@ -90,37 +89,25 @@
 .main_a {
     flex-basis: 30%;
     background-repeat: no-repeat;
+    background-position-y: 25px;
 }
 .item1 {
-    background-image: url("img/icon-clock.png");
-    background-size: 30px;
-    background-position: 0 0;
+    background-image: url("../icons/ALARM.png");
 }
 .item2 {
-    background-image: url("img/icon-line.png");
-    background-size: 30px;
-    background-position: 0 0;
-
+    background-image: url("../icons/GRAPH.png");
 }
 .item3 {
-    background-image: url("img/icon-pc.png");
-    background-size: 30px;
-    background-position: 0 0;
+    background-image: url("../icons/COMPUTER.png");
 }
 .item4 {
-    background-image: url("img/icon-book.png");
-    background-size: 30px;
-    background-position: 0 0;
+    background-image: url("../icons/BOOK.png");
 }
 .item5 {
-    background-image: url("img/icon-home.png");
-    background-size: 30px;
-    background-position: 0 0;
+    background-image: url("../icons/HOME.png");
 }
 .item6 {
-    background-image: url("img/icon-square.png");
-    background-size: 30px;
-    background-position: 0 0;
+    background-image: url("../icons/IMAGE.png");
 }
 .articles p {
     padding-left: 50px;
@@ -144,6 +131,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%
 }
 
 .card {
@@ -151,9 +139,6 @@
 }
 .ph {
     transition-duration: 0.2s
-}
-.ph img {
-    width: 320px;
 }
 .ph:hover {
     transform: translateX(-10px) translateY(-10px);
@@ -187,56 +172,54 @@
     height: 56px;
     position: absolute;
     border: 0px;
+    outline: none;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s
 
 }
 .card_style:hover {
     background-color: #f38181;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s
 }
 .card_style:nth-child(-n+3) {
-    border-right: 1px solid #f9bd87;
+    border-right: 1px solid #f9bd87
 }
 .facebook {
-    background-image: url("img/facebook.png");
+    background-image: url("../icons/facebook2.png");
     top: 197px;
     left: 68px;
 }
 .facebook:hover {
-    background-image: url("img/facebook1.png");
-    background-color: #95e1d3;
+    background-image: url("../icons/facebook.png");
 }
 
 .twitter {
-    background-image: url("img/twitter.png");
+    background-image: url("../icons/twitter2.png");
     top: 197px;
     left: 124px;
 }
 
 .twitter:hover {
-    background-image: url("img/twitter1.png");
-    background-color: #95e1d3;
+    background-image: url("../icons/twitter.png");
 }
 
 .pinterest {
-    background-image: url("img/pinterest.png");
+    background-image: url("../icons/pinterest2.png");
     top: 197px;
     left: 180px;
 }
 .pinterest:hover {
-    background-image: url("img/pinterest1.png");
+    background-image: url("../icons/pinterest.png");
 }
 .instagram {
-    background-image: url("img/instagram.png");
+    background-image: url("../icons/instagram2.png");
     top: 197px;
     left: 236px;
-    background-color: #95e1d3;
 }
 .instagram:hover {
-    background-image: url("img/instagram1.png");
+    background-image: url("../icons/instagram.png");
 }
 .card_d {
     font-size: 14px;
@@ -265,8 +248,7 @@
 .end_footer li {
     list-style: none;
     display:inline-block;
-    line-height: 50px;
-    font-family: 'Montserrat', sans-serif;
+    line-height: 50px
 }
 .subscribe_form {
     display: flex;
