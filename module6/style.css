@@ -12,12 +12,15 @@
     overflow: hidden;
 }
 /* -----NAVIGATION----- */
-.logo{
+.logo {
     font-size: 30px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     color: #95e1d3;
     text-decoration: none;
+}
+.logo:hover {
+    color: #f38181;;
 }
 .navigation {
     display: flex;
@@ -57,10 +60,12 @@
     font-family: 'Kaushan Script', cursive;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 15px;
 }
 .second_line {
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
     font-size: 30px;
 }
 .second_line::after {
@@ -76,15 +81,15 @@
     font-size: 14px;
     font-weight: 400;
     padding-left: 50px;
+    margin-bottom: 10px;
 }
 
 /* ----ARTICLES---- */
 .articles {
-    width: 100%;
+    width: 96%;
     display: flex;
-    justify-content: space-around;
-    align-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .main_a {
@@ -94,41 +99,43 @@
 .item1 {
     background-image: url("img/icon-clock.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 }
 .item2 {
     background-image: url("img/icon-line.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 
 }
 .item3 {
     background-image: url("img/icon-pc.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 }
 .item4 {
     background-image: url("img/icon-book.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 }
 .item5 {
     background-image: url("img/icon-home.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 }
 .item6 {
     background-image: url("img/icon-square.png");
     background-size: 30px;
-    background-position: 0 0;
+    background-position: 10px 0px;
 }
 .articles p {
     padding-left: 50px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #999999;
-    line-height: 28px;
+    line-height: 22px;
     margin-bottom: 90px;
+    text-align: left;
+    width: 100%;
     
 }
 /* ----CARDS---- */
@@ -138,7 +145,8 @@
     text-align: center;
     line-height: 28px;
     color: #999999;
-    margin-bottom: 90px;
+    margin: 90px auto 80px auto;
+    width: 100%;
 }
 .cards {
     display: flex;
@@ -194,35 +202,33 @@
 
 }
 .card_style:hover {
-    background-color: #f38181;
+    background-color: #95e1d3;
     transition-duration: 0.2s;
 }
-.card_style:nth-child(-n+3) {
+.card_style:nth-child(n+1) {
     border-right: 1px solid #f9bd87;
 }
 .facebook {
-    background-image: url("img/facebook.png");
+    background-image: url("img/facebook1.png");
     top: 197px;
     left: 68px;
 }
 .facebook:hover {
     background-image: url("img/facebook1.png");
-    background-color: #95e1d3;
 }
 
 .twitter {
-    background-image: url("img/twitter.png");
+    background-image: url("img/twitter1.png");
     top: 197px;
     left: 124px;
 }
 
 .twitter:hover {
     background-image: url("img/twitter1.png");
-    background-color: #95e1d3;
 }
 
 .pinterest {
-    background-image: url("img/pinterest.png");
+    background-image: url("img/pinterest1.png");
     top: 197px;
     left: 180px;
 }
@@ -230,10 +236,9 @@
     background-image: url("img/pinterest1.png");
 }
 .instagram {
-    background-image: url("img/instagram.png");
+    background-image: url("img/instagram1.png");
     top: 197px;
     left: 236px;
-    background-color: #95e1d3;
 }
 .instagram:hover {
     background-image: url("img/instagram1.png");
@@ -244,6 +249,7 @@
     font-weight: 400;
     text-align: center;
     line-height: 28px;
+    margin-top: 20px;
 }
 .card_d2 {
     font-family: 'Roboto', sans-serif;
@@ -255,18 +261,23 @@
 }
 
 /* ----FOOTER---- */
-.end_footer {
+footer {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 80px auto 20px auto;
     border-top: 1px solid #999999;
 }
-.end_footer li {
+footer li {
     list-style: none;
     display:inline-block;
     line-height: 50px;
     font-family: 'Montserrat', sans-serif;
+}
+footer a {
+    text-decoration: none;
+    color: #f38181;
 }
 .subscribe_form {
     display: flex;
