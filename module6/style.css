@@ -209,7 +209,7 @@
     border-right: 1px solid #f9bd87;
 }
 .facebook {
-    background-image: url("img/facebook1.png");
+    background-image: url("img/facebook1.png")  ;
     top: 197px;
     left: 68px;
 }
